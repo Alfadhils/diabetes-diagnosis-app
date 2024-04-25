@@ -1,0 +1,47 @@
+/* DiagnosisForm.css */
+.diagnosis-form-container {
+    margin-top: 10px; /* Add margin to separate form from heading */
+  }
+  
+  .diagnosis-form {
+    max-width: 400px; /* Set maximum width for the form */
+    margin: auto; /* Center the form horizontally */
+  }
+  
+  .diagnosis-form label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add space between labels and inputs */
+  }
+  
+  .diagnosis-form input {
+    width: 100%; /* Make input fields fill the width of their container */
+    padding: 8px; /* Add padding to input fields */
+    margin-bottom: 5px; /* Add space between input fields */
+  }
+  
+  .diagnosis-form button {
+    background-color: #007bff; /* Example button background color */
+    margin-top : 5px;
+    color: white; /* Example button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove default button border */
+    border-radius: 10px; /* Add border radius to the button */
+    cursor: pointer; /* Set cursor to pointer on hover */
+  }
+  
+  .diagnosis-form button:hover {
+    background-color: #0056b3; /* Darken button background color on hover */
+  }
+
+  .diagnosis-message {
+    margin: 15px 0px; /* Add margin to separate message from form */
+    text-align: center; /* Center text */
+    border: 2px solid #92C9FF; /* Add border around the message with light blue color */
+    border-radius: 10px; /* Add rounded border */
+    padding-bottom: 10px; /* Add padding to the message */
+    background-color: #F4F9FD; /* Set background color */
+  }
+  
+  .diagnosis-message p {
+    margin-bottom: 5px; /* Add space between lines */
+  }

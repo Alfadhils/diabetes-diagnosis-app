@@ -1,0 +1,32 @@
+/* NavigationBar.css */
+.navbar-container {
+    padding: 0px; /* Example padding */
+    text-align: center;
+    border-bottom: 2px solid #000000;
+  }
+  
+  .navbar-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0px 0px 5px 0px; /* Remove default padding */
+    display: flex;
+    justify-content: left; /* Center list items horizontally */
+  }
+
+  .navbar-list li {
+    margin-right: 10px; /* Add horizontal spacing between list items */
+  }
+  
+  .navbar-list li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+
+  .navbar-list li div {
+    cursor: pointer; /* Example cursor style */
+    border: 1px solid black; /* Add border to list items */
+    border-radius: 10px; /* Add rounded edges */
+    padding: 8px 10px; /* Add padding to list items */
+  }
+  
+  .navbar-list li div:hover {
+    background-color: rgba(109, 76, 76, 0.1); /* Add hover background color */
+  }

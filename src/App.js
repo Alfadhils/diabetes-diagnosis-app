@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import NavigationBar from './components/NavigationBar';
+import DiagnosisForm from './components/DiagnosisForm';
+import DiagnosisHistory from './components/DiagnosisHistory';
 
-function App() {
+const App = () => {
+  const [selectedOption, setSelectedOption] = useState('diagnosis');
+  const [diagnosisHistory, setDiagnosisHistory] = useState([]);
+  
+
+  const handleSelectOption = (option) => {
+    setSelectedOption(option);
+  };
+
+  const handleFormSubmit = (formData) => {
+    setDiagnosisHistory([...diagnosisHistory, formData]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationBar onSelectOption={handleSelectOption} />
+      <div>
+        {selectedOption === 'diagnosis' && <DiagnosisForm onFormSubmit={handleFormSubmit} />}
+        {selectedOption === 'history' && <DiagnosisHistory history={diagnosisHistory} setDiagnosisHistory={setDiagnosisHistory} />}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

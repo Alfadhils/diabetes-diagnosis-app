@@ -1,0 +1,63 @@
+/* DiagnosisHistory.css */
+.diagnosis-history-container {
+    margin-top: 20px;
+}
+
+.diagnosis-buttons {
+    width: 100%;
+}
+
+.diagnosis-item {
+    margin-bottom: 10px;
+}
+
+.diagnosis-item > div {
+    justify-content: space-between; /* Apply space between only to this div */
+    margin-bottom: 5px; /* Add margin between the divs */
+}
+
+.diagnosis-name{
+    padding: 8px 12px;
+    background-color: #ffffff; /* Light gray background color */
+    color: #1100ff; /* Dark gray text color */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 0; /* Remove border radius */
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 8px 12px;
+    background-color: #ffffff; /* Light gray background color */
+    color: #ff0000; /* Dark gray text color */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 0; /* Remove border radius */
+    cursor: pointer;
+}
+
+.diagnosis-name:hover{
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+    
+.delete-button:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.delete-button {
+margin-left: 10px; /* Add margin to create space between buttons */
+}
+
+.diagnosis-info {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin-top: 10px; /* Add margin to separate diagnosis info from buttons */
+width: 100%; /* Ensure the container spans the full width */
+}
+
+.diagnosis-info p {
+margin-bottom: 5px;
+}
+
+.diagnosis-info p strong {
+font-weight: bold;
+}
