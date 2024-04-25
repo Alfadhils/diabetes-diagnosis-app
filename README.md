@@ -17,3 +17,40 @@ The prediction of diabetes risk is powered by a machine learning model developed
 - **Framework**: React.js
 - **API Endpoint**: Flask (Python)
 - **Machine Learning**: Python, scikit-learn
+
+## Getting Started
+
+To get started with the Diabetes Diagnosis React App, follow these steps:
+
+### 1. Clone the GitHub Repository
+Clone the GitHub repository to your local machine:
+```bash
+git clone https://github.com/Alfadhils/diabetes-diagnosis-app.git
+```
+
+### 2. Install Python Requirements
+Navigate to the project directory and install the Python requirements:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Install JavaScript Requirements
+Navigate to the project directory and install the JavaScript requirements:
+```bash
+npm install
+```
+
+### 4. Initialize the ML API Endpoint through Flask
+Navigate back to the project directory and run the Flask API for the machine learning model:
+```bash
+python flask_api.py
+```
+
+### 5. Run the React App
+In a separate terminal window, run the React app:
+```bash
+npm start
+```
+
+
+The Diabetes Diagnosis React App should now be running locally on your machine. Open your web browser and visit `http://localhost:3000` to access the application.
